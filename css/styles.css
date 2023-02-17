@@ -354,16 +354,16 @@ textarea {
 }
 
 .section-two-item {
-  width: 396px;
+  max-width: 396px;
 }
 @media screen and (min-width: 768px) {
   .section-two-item {
-    width: 356px;
+    max-width: 356px;
   }
 }
 @media screen and (min-width: 1200px) {
   .section-two-item {
-    width: 264px;
+    max-width: 264px;
   }
 }
 
