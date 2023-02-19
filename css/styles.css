@@ -860,6 +860,7 @@ textarea {
 .portfolio-link:focus .overlay {
   transform: translate(0, 0);
 }
+
 /**
   |============================
   | Modal
@@ -885,13 +886,18 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
+  width: 392px;
   background-color: #fcfcfc;
   border-radius: 4px;
   padding-top: 72px;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+  }
 }
 .modal-button {
   position: absolute;
@@ -929,6 +935,7 @@ textarea {
 .modal-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .form-btn {
   cursor: pointer;
@@ -963,11 +970,13 @@ textarea {
   color: var(--subtle-text);
   font-size: 12px;
   line-height: calc(16 / 12);
+  margin-right: auto;
 }
 .form-label-comment {
   color: var(--subtle-text);
   font-size: 12px;
   line-height: calc(16 / 12);
+  margin-right: auto;
 }
 .form-box {
   position: relative;
