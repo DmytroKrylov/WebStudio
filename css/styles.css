@@ -1116,7 +1116,8 @@ textarea {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
+  /* width: 100vw; */
   /* height: 100vh; */
   height: 100px;
   /* padding-top: 80px;
