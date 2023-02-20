@@ -121,13 +121,34 @@
           <h2 class="section-three-title">What are we doing</h2>
           <ul class="list section-three-items">
             <li class="section-three-bg">
-              <img src="./images/work/photo1.jpg" width="360" height="300" alt="pc" />
+              <img
+                srcset="./images/work/image@2x.jpg 2x"
+                src="./images/work/image1.jpg"
+                width="360"
+                height="300"
+                alt="pc"
+                loading="lazy"
+              />
             </li>
             <li class="section-three-bg">
-              <img src="./images/work/photo2.jpg" width="360" height="300" alt="phone" />
+              <img
+                srcset="./images/work/image2@2x.jpg 2x"
+                src="./images/work/image2.jpg"
+                width="360"
+                height="300"
+                alt="phone"
+                loading="lazy"
+              />
             </li>
             <li class="section-three-bg">
-              <img src="./images/work/photo3.jpg" width="360" height="300" alt="phone and pc" />
+              <img
+                srcset="./images/work/image3@2x.jpg 2x"
+                src="./images/work/image3.jpg"
+                width="360"
+                height="300"
+                alt="phone and pc"
+                loading="lazy"
+              />
             </li>
           </ul>
         </div>
@@ -138,7 +159,30 @@
           <h2 class="section-four-title">Our Team</h2>
           <ul class="list section-four-items">
             <li class="section-four-bg">
-              <img src="./images/team/photo4.jpg" width="264" height="260" alt="Mark Guerrero" />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="./images/team/team1.webp 1x, ./images/team/team1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team1.webp 1x, ./images/team/team1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/team/team1.webp 1x, ./images/team/team1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/team/team1.webp"
+                  width="264"
+                  height="260"
+                  alt="Mark Guerrero"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team">
                 <h3 class="section-subtitle">Mark Guerrero</h3>
                 <p class="section-text">Product Designer</p>
@@ -167,7 +211,30 @@
               </div>
             </li>
             <li class="section-four-bg">
-              <img src="./images/team/photo5.jpg" width="264" height="260" alt="Tom Ford" />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="./images/team/team2.webp 1x, ./images/team/team2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team2.webp 1x, ./images/team/team2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/team/team2.webp 1x, ./images/team/team2@2x.webp 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/team2.webp"
+                  width="264"
+                  height="260"
+                  alt="Tom Ford"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team">
                 <h3 class="section-subtitle">Tom Ford</h3>
                 <p class="section-text">Frontend Developer</p>
@@ -196,7 +263,30 @@
               </div>
             </li>
             <li class="section-four-bg">
-              <img src="./images/team/photo6.jpg" width="264" height="260" alt="Camila Garcia" />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="./images/team/team3.webp 1x, ./images/team/team3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team3.webp 1x, ./images/team/team3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/team/team3.webp 1x, ./images/team/team3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/team/team3.jpg"
+                  width="264"
+                  height="260"
+                  alt="Camila Garcia"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team">
                 <h3 class="section-subtitle">Camila Garcia</h3>
                 <p class="section-text">Marketing</p>
@@ -225,7 +315,30 @@
               </div>
             </li>
             <li class="section-four-bg">
-              <img src="./images/team/photo7.jpg" width="264" height="260" alt="Daniel Wilson" />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="./images/team/team4.webp 1x, ./images/team/team4@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/team4.webp 1x, ./images/team/team4@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/team/team4.webp 1x, ./images/team/team4@2x.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/team/team4.webp"
+                  width="264"
+                  height="260"
+                  alt="Daniel Wilson"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team">
                 <h3 class="section-subtitle">Daniel Wilson</h3>
                 <p class="section-text">UI Designer</p>

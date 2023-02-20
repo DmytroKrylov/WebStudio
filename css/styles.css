@@ -252,30 +252,60 @@ textarea {
 */
 .section-one {
   min-height: 432px;
-  max-width: 428px;
+  /* max-width: 428px; */
+  max-width: 1440px;
   padding-top: 112px;
   padding-bottom: 112px;
   margin: 0 auto;
 
-  /* To Do */
   background-color: var(--dark);
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/bgi/bgi-mobile.jpg);
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/bgi/bgi-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 429px) {
+  .section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/bgi/bgi-tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .section-one {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/bgi/bgi-tablet@2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .section-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/bgi/bgi-desktop.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .section-one {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/bgi/bgi-desktop@2x.jpg);
+    }
+  }
 }
 @media screen and (min-width: 768px) {
   .section-one {
     min-height: 436px;
-    max-width: 768px;
+    /* max-width: 768px; */
     padding-bottom: 108px;
   }
 }
 @media screen and (min-width: 1158px) {
   .section-one {
     min-height: 500px;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     padding-top: 188px;
     padding-bottom: 188px;
   }
@@ -438,8 +468,8 @@ textarea {
   gap: 24px;
 }
 .section-three-bg {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
 }
 
 /**
@@ -1123,7 +1153,6 @@ textarea {
   padding-top: 80px;
   padding-bottom: 40px;
   padding-left: 40px;
-  /* padding-right: 15px; */
   /* padding: 32px; */
   /* padding: 80px 40px 40px; */
   background-color: var(--white);
