@@ -1159,12 +1159,10 @@ textarea {
 }
 .mobile-contact {
   margin-top: auto;
-  text-align: center;
 }
 .mobile-tel {
   font-weight: 600;
-  /* font-size: 36px; */
-  font-size: 25px;
+  font-size: 36px;
   line-height: calc(40 / 36);
   color: var(--primary-brand);
 }
@@ -1181,6 +1179,5 @@ textarea {
 .mobile-social-list {
   display: flex;
   gap: 56px;
-  justify-content: center;
   margin-top: 48px;
 }
