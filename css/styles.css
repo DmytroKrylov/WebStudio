@@ -804,18 +804,70 @@ textarea {
   | PORTFOLIO PAGE
   |============================
 */
+.portfolio {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding: 0px;
+  }
+}
+
+.container-filter {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 16px;
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .container-filter {
+    justify-content: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container-filter {
+    padding-top: 96px;
+    padding-bottom: 72px;
+    margin-bottom: 0;
+  }
+}
+
+.container-link {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+@media screen and (min-width: 768px) {
+  .container-link {
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    margin-bottom: 96px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container-link {
+    row-gap: 48px;
+    margin-bottom: 120px;
+  }
+}
+
 .btn-filter {
   color: var(--primary-brand);
   background-color: var(--light);
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
-
   height: 48px;
   padding: 12px 24px;
   border: 1px solid var(--accent);
   border-radius: 4px;
-
   transition: color 500ms var(--timing-function), background-color 500ms var(--timing-function),
     border-color 500ms var(--timing-function), box-shadow 500ms var(--timing-function);
 }
@@ -827,35 +879,24 @@ textarea {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-color: var(--pressed-state);
 }
-.portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
-}
-.container-filter {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 72px;
-  justify-content: center;
-}
 .btn-filter-all {
   width: 69px;
+  letter-spacing: 0.04em;
 }
 .btn-filter-site {
   width: 116px;
 }
 .btn-filter-app {
   width: 78px;
+  letter-spacing: 0.04em;
 }
 .btn-filter-desigh {
   width: 101px;
+  letter-spacing: 0.04em;
 }
 .btn-filter-marketing {
   width: 126px;
-}
-.container-link {
-  display: flex;
-  gap: 48px 24px;
-  flex-wrap: wrap;
+  letter-spacing: 0.04em;
 }
 .filter-link {
   padding-top: 32px;
@@ -869,6 +910,12 @@ textarea {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   transition: box-shadow 500ms var(--timing-function);
 }
+@media screen and (min-width: 768px) {
+  .portfolio-link {
+    max-width: 356px;
+  }
+}
+
 .portfolio-link:hover,
 .portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
